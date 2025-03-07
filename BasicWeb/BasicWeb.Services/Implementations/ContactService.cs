@@ -78,7 +78,7 @@ namespace BasicWeb.Services.Implementations
                 throw new ArgumentException("Company name cannot contain only numbers");
             }
 
-            Contact existingContact = _contactRepository.GetById(updateContactDto.Id);
+            Contact existingContact = await _contactRepository.GetById(updateContactDto.Id);
 
             if (existingContact == null)
             {
@@ -92,9 +92,9 @@ namespace BasicWeb.Services.Implementations
             return existingContact.Id;
         }
 
-        public void DeleteContact(int id)
+        public async Task DeleteContact(int id)
         {
-            Contact contact = _contactRepository.GetById(id);
+            Contact contact = await _contactRepository.GetById(id);
 
             if (contact == null)
             {

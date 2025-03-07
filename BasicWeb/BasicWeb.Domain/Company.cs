@@ -2,7 +2,21 @@
 {
     public class Company : BaseEntity
     {
-        // added
-        public virtual ICollection<Contact> Contacts { get; set; }
+        public int UpdateName(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new ArgumentNullException("name");
+            }
+
+            if (name.All(char.IsDigit))
+            {
+                throw new ArgumentException("Company name cannot contain only numbers");
+            }
+
+            Name = name;
+
+            return Id;
+        }
     }
 }

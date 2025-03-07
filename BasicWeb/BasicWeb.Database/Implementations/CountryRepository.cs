@@ -39,9 +39,9 @@ namespace BasicWeb.Database.Implementations
             _context.SaveChanges();
         }
 
-        public Country GetById(int id)
+        public async Task<Country> GetById(int id)
         {
-            return _context.Countries.FirstOrDefault(x => x.Id == id);
+            return await _context.Countries.FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<Country> GetCountryWithContacts(int id)

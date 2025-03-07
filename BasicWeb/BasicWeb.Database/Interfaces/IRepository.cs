@@ -8,7 +8,7 @@ namespace BasicWeb.Database.Interfaces
 
         Task<int> Update(T entity);
 
-        T GetById(int id);
+        Task<T> GetById(int id);
 
         void Delete(T id);
 

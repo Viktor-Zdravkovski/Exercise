@@ -39,9 +39,9 @@ namespace BasicWeb.Database.Implementations
             _context.SaveChanges();
         }
 
-        public Company GetById(int id)
+        public async Task<Company> GetById(int id)
         {
-            return _context.Companies.FirstOrDefault(x => x.Id == id);
+            return await _context.Companies.FirstOrDefaultAsync(x => x.Id == id);
         }
     }
 }

@@ -19,7 +19,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpGet("GetAllCompanies")]
-        public async Task<ActionResult> GetAllCompanies()
+        public async Task<IActionResult> GetAllCompanies()
         {
             try
             {
@@ -54,7 +54,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpPut("UpdateCompany")]
-        public async Task<ActionResult> UpdateCompany([FromBody] UpdateCompanyDto updateCompanyDto)
+        public async Task<IActionResult> UpdateCompany([FromBody] UpdateCompanyDto updateCompanyDto)
         {
             if (updateCompanyDto == null)
             {
@@ -81,7 +81,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpDelete("DeleteCompanyById/{id}")]
-        public ActionResult DeleteCompanyId(int id)
+        public async Task<IActionResult> DeleteCompanyId(int id)
         {
             if (id <= 0)
             {
@@ -90,7 +90,7 @@ namespace BasicWeb.Controllers
 
             try
             {
-                _companyService.DeleteCompany(id);
+                await _companyService.DeleteCompany(id);
                 return Ok($"Company with ID:{id} was successfuly deleted");
             }
             catch (NotFoundException ex)

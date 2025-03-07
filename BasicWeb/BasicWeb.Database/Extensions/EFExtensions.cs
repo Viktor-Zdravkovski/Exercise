@@ -20,11 +20,9 @@ namespace BasicWeb.Database.Extensions
                       //.HasColumnType("nvarchar(30)")
                       .IsRequired();
 
-                // added on delete
                 entity.HasMany(x => x.Contacts)
-                      .WithOne()
-                      .HasForeignKey(x => x.CountryId)
-                      .OnDelete(DeleteBehavior.NoAction);
+                      .WithOne(x => x.Country)
+                      .HasForeignKey(x => x.CountryId);
             });
         }
 
@@ -41,12 +39,6 @@ namespace BasicWeb.Database.Extensions
                 entity.Property(x => x.Name)
                       //.HasColumnType("nvarchar(50)")
                       .IsRequired();
-
-                // Added
-                entity.HasMany(x => x.Contacts)
-                      .WithOne()
-                      .HasForeignKey(x => x.CompanyId)
-                      .OnDelete(DeleteBehavior.NoAction);
             });
         }
 
@@ -73,16 +65,13 @@ namespace BasicWeb.Database.Extensions
                       .IsRequired();
 
 
-                // added on delete to both
                 entity.HasOne(x => x.Company)
                       .WithMany()
-                      .HasForeignKey(x => x.CompanyId)
-                      .OnDelete(DeleteBehavior.NoAction);
+                      .HasForeignKey(x => x.CompanyId);
 
                 entity.HasOne(x => x.Country)
-                      .WithMany()
-                      .HasForeignKey(x => x.CountryId)
-                      .OnDelete(DeleteBehavior.NoAction);
+                      .WithMany(x => x.Contacts)
+                      .HasForeignKey(x => x.CountryId);
             });
         }
 

@@ -8,7 +8,7 @@ namespace BasicWeb.Services.Interfaces
 
         Task<int> UpdateCountry(UpdateCountryDto updateCountryDto);
 
-        void DeleteCountry(int id);
+        Task DeleteCountry(int id);
 
         Task<List<CountryDto>> GetAll();
 

@@ -42,9 +42,9 @@ namespace BasicWeb.Database.Implementations
             _context.SaveChanges();
         }
 
-        public Contact GetById(int id)
+        public async Task<Contact> GetById(int id)
         {
-            return _context.Contacts.FirstOrDefault(x => x.Id == id);
+            return await _context.Contacts.FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<List<Contact>> GetContactsWithCompanyAndCountry()

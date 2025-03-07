@@ -18,7 +18,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpGet("GetAllContacts")]
-        public async Task<ActionResult> GetAllContacts()
+        public async Task<IActionResult> GetAllContacts()
         {
             try
             {
@@ -31,7 +31,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpPost("AddContact")]
-        public async Task<ActionResult> AddContact([FromBody] AddContactDto addContactDto)
+        public async Task<IActionResult> AddContact([FromBody] AddContactDto addContactDto)
         {
             try
             {
@@ -54,7 +54,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpPut("UpdateContact")]
-        public async Task<ActionResult> UpdateContact([FromBody] UpdateContactDto updateContactDto)
+        public async Task<IActionResult> UpdateContact([FromBody] UpdateContactDto updateContactDto)
         {
             if (updateContactDto == null)
             {
@@ -81,7 +81,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpDelete("DeleteContactById/{id}")]
-        public ActionResult DeleteCompanyById(int id)
+        public async Task<IActionResult> DeleteCompanyById(int id)
         {
             if (id <= 0)
             {
@@ -90,7 +90,7 @@ namespace BasicWeb.Controllers
 
             try
             {
-                _contactService.DeleteContact(id);
+                await _contactService.DeleteContact(id);
                 return Ok($"Contact with ID:{id} was successfuly deleted");
             }
             catch (NotFoundException ex)
@@ -104,7 +104,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpGet("GetContactsWithCompanyAndCountry")]
-        public async Task<ActionResult> GetContactsWithCompanyAndCountry()
+        public async Task<IActionResult> GetContactsWithCompanyAndCountry()
         {
             try
             {
@@ -129,7 +129,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpGet("FilterContacts")]
-        public async Task<ActionResult> FilterContacts(int countryId, int companyId)
+        public async Task<IActionResult> FilterContacts(int countryId, int companyId)
         {
             try
             {

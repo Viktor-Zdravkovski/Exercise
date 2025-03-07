@@ -19,7 +19,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpGet("GetAllCountries")]
-        public async Task<ActionResult> GetAllCountries()
+        public async Task<IActionResult> GetAllCountries()
         {
             try
             {
@@ -62,7 +62,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpPut("UpdateCountry")]
-        public async Task<ActionResult> UpdateCountry([FromBody] UpdateCountryDto updateCountryDto)
+        public async Task<IActionResult> UpdateCountry([FromBody] UpdateCountryDto updateCountryDto)
         {
             try
             {
@@ -90,7 +90,7 @@ namespace BasicWeb.Controllers
 
         [Authorize]
         [HttpDelete("DeleteCountryById/{id}")]
-        public ActionResult DeleteCountry(int id)
+        public async Task<IActionResult> DeleteCountry(int id)
         {
             if (id <= 0)
             {
@@ -99,7 +99,7 @@ namespace BasicWeb.Controllers
 
             try
             {
-                _countryService.DeleteCountry(id);
+                await _countryService.DeleteCountry(id);
                 return Ok($"Country with ID:{id} has been deleted successfuly");
             }
             catch (NotFoundException ex)
@@ -113,7 +113,7 @@ namespace BasicWeb.Controllers
         }
 
         [HttpGet("GetCompanyStatisticsByCountryId/{id}")]
-        public async Task<ActionResult> CompanyStatistics(int id)
+        public async Task<IActionResult> CompanyStatistics(int id)
         {
             if (id <= 0)
             {

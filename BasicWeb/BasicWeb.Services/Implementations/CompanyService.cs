@@ -41,17 +41,7 @@ namespace BasicWeb.Services.Implementations
 
         public async Task<int> UpdateCompany(UpdateCompanyDto updateCompanyDto)
         {
-            if (string.IsNullOrWhiteSpace(updateCompanyDto.Name))
-            {
-                throw new ArgumentException("Company name cannot be empty");
-            }
-
-            if (updateCompanyDto.Name.All(char.IsDigit))
-            {
-                throw new ArgumentException("Company name cannot contain only numbers");
-            }
-
-            Company existingCompany = _companyRepo.GetById(updateCompanyDto.Id);
+            Company existingCompany = await _companyRepo.GetById(updateCompanyDto.Id);
 
             if (existingCompany == null)
             {
@@ -59,15 +49,15 @@ namespace BasicWeb.Services.Implementations
                 throw new NotFoundException("No company found to update");
             }
 
-            existingCompany.Name = updateCompanyDto.Name;
+            int id = existingCompany.UpdateName(updateCompanyDto.Name);
 
             await _companyRepo.Update(existingCompany);
-            return existingCompany.Id;
+            return id;
         }
 
-        public void DeleteCompany(int id)
+        public async Task DeleteCompany(int id)
         {
-            Company company = _companyRepo.GetById(id);
+            Company company = await _companyRepo.GetById(id);
 
             if (company == null)
             {

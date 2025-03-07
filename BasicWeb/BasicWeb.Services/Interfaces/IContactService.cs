@@ -9,7 +9,7 @@ namespace BasicWeb.Services.Interfaces
 
         Task<int> UpdateContact(UpdateContactDto updateContactDto);
 
-        void DeleteContact(int id);
+        Task DeleteContact(int id);
 
         Task<List<ContactDto>> GetAll();
 

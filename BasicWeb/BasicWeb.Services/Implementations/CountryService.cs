@@ -52,7 +52,7 @@ namespace BasicWeb.Services.Implementations
                 throw new ArgumentException("Company name cannot contain only numbers");
             }
 
-            Country existingCountry = _countryRepo.GetById(updateCountryDto.Id);
+            Country existingCountry = await _countryRepo.GetById(updateCountryDto.Id);
 
             if (existingCountry == null)
             {
@@ -66,9 +66,9 @@ namespace BasicWeb.Services.Implementations
             return existingCountry.Id;
         }
 
-        public void DeleteCountry(int id)
+        public async Task DeleteCountry(int id)
         {
-            Country country = _countryRepo.GetById(id);
+            Country country = await _countryRepo.GetById(id);
 
             if (country == null)
             {

@@ -8,7 +8,7 @@ namespace BasicWeb.Services.Interfaces
 
         Task<int> UpdateCompany(UpdateCompanyDto updateCompanyDto);
 
-        void DeleteCompany(int id);
+        Task DeleteCompany(int id);
 
         Task<List<CompanyDto>> GetAll();
     }
