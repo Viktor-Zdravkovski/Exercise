@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\justi\\Desktop\\Bug Fix Exercise\\FixingBug\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E97D6D-637D-4C4E-9B5D-BEDE34B6490D}|FixingBug\\FixingBug.csproj|c:\\users\\justi\\desktop\\bug fix exercise\\fixingbug\\fixingbug\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E97D6D-637D-4C4E-9B5D-BEDE34B6490D}|FixingBug\\FixingBug.csproj|solutionrelative:fixingbug\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\justi\\Desktop\\Bug Fix Exercise\\FixingBug\\FixingBug\\Program.cs",
+              "RelativeDocumentMoniker": "FixingBug\\Program.cs",
+              "ToolTip": "C:\\Users\\justi\\Desktop\\Bug Fix Exercise\\FixingBug\\FixingBug\\Program.cs",
+              "RelativeToolTip": "FixingBug\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T22:19:13.557Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

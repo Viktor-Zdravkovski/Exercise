@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lExoa8Gkiu8=",
+  "dgSpecHash": "xr8IjtovOo0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\justi\\Desktop\\VIce\\BasicWeb\\BasicWeb.Services\\BasicWeb.Services.csproj",
+  "projectFilePath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Services\\BasicWeb.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\justi\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\justi\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

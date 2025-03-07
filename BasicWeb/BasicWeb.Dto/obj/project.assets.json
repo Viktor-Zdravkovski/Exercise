@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\justi\\Desktop\\VIce\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj",
+      "projectUniqueName": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj",
       "projectName": "BasicWeb.Dto",
-      "projectPath": "C:\\Users\\justi\\Desktop\\VIce\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj",
+      "projectPath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj",
       "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\justi\\Desktop\\VIce\\BasicWeb\\BasicWeb.Dto\\obj\\",
+      "outputPath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Dto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

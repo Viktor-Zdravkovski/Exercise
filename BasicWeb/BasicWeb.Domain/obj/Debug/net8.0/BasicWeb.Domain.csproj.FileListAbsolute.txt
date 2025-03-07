@@ -20,3 +20,15 @@ C:\Users\justi\Desktop\VIce\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\BasicWeb.D
 C:\Users\justi\Desktop\VIce\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\refint\BasicWeb.Domain.dll
 C:\Users\justi\Desktop\VIce\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\BasicWeb.Domain.pdb
 C:\Users\justi\Desktop\VIce\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\ref\BasicWeb.Domain.dll
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\bin\Debug\net8.0\BasicWeb.Domain.deps.json
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\bin\Debug\net8.0\BasicWeb.Domain.dll
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\bin\Debug\net8.0\BasicWeb.Domain.pdb
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\BasicWeb.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\BasicWeb.Domain.AssemblyInfoInputs.cache
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\BasicWeb.Domain.AssemblyInfo.cs
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\BasicWeb.Domain.csproj.CoreCompileInputs.cache
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\BasicWeb.Domain.sourcelink.json
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\BasicWeb.Domain.dll
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\refint\BasicWeb.Domain.dll
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\BasicWeb.Domain.pdb
+C:\Users\justi\Desktop\basicwebexerice\Exercise\BasicWeb\BasicWeb.Domain\obj\Debug\net8.0\ref\BasicWeb.Domain.dll

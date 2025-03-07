@@ -1,0 +1,14 @@
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\bin\Debug\net8.0\FixingBug.exe
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\bin\Debug\net8.0\FixingBug.deps.json
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\bin\Debug\net8.0\FixingBug.runtimeconfig.json
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\bin\Debug\net8.0\FixingBug.dll
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\bin\Debug\net8.0\FixingBug.pdb
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\obj\Debug\net8.0\FixingBug.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\obj\Debug\net8.0\FixingBug.AssemblyInfoInputs.cache
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\obj\Debug\net8.0\FixingBug.AssemblyInfo.cs
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\obj\Debug\net8.0\FixingBug.csproj.CoreCompileInputs.cache
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\obj\Debug\net8.0\FixingBug.dll
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\obj\Debug\net8.0\refint\FixingBug.dll
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\obj\Debug\net8.0\FixingBug.pdb
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\obj\Debug\net8.0\FixingBug.genruntimeconfig.cache
+C:\Users\justi\Desktop\Bug Fix Exercise\FixingBug\FixingBug\obj\Debug\net8.0\ref\FixingBug.dll
