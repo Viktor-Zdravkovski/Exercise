@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="XAct.Core.PCL" Version="0.0.5014" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BasicWeb.Database\BasicWeb.Database.csproj" />
+    <ProjectReference Include="..\BasicWeb.Domain\BasicWeb.Domain.csproj" />
+    <ProjectReference Include="..\BasicWeb.Dto\BasicWeb.Dto.csproj" />
+    <ProjectReference Include="..\BasicWeb.Shared\BasicWeb.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
