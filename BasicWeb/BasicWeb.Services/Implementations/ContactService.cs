@@ -102,7 +102,7 @@ namespace BasicWeb.Services.Implementations
                 throw new NotFoundException($"Contact with ID:{id} was not found");
             }
 
-            _contactRepository.Delete(contact);
+           _contactRepository.Delete(contact);
         }
 
         public async Task<List<ContactDto>> GetAll()

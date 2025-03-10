@@ -658,7 +658,7 @@
         },
         "runtime": {
           "BasicWeb.Database.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -666,7 +666,7 @@
       "BasicWeb.Domain/1.0.0": {
         "runtime": {
           "BasicWeb.Domain.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -674,7 +674,7 @@
       "BasicWeb.Dto/1.0.0": {
         "runtime": {
           "BasicWeb.Dto.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -682,7 +682,7 @@
       "BasicWeb.Shared/1.0.0": {
         "runtime": {
           "BasicWeb.Shared.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

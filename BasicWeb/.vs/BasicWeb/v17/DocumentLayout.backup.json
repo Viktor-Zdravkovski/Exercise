@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\",
+  "WorkspaceRootPath": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7AE33861-7E63-44FD-A8A2-CAC5CBD5BA47}|BasicWeb\\BasicWeb.csproj|c:\\users\\justi\\desktop\\basicwebexerice\\exercise\\basicweb\\basicweb\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7AE33861-7E63-44FD-A8A2-CAC5CBD5BA47}|BasicWeb\\BasicWeb.csproj|solutionrelative:basicweb\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{459488CD-D67E-459A-8C72-638512DDA0B8}|BasicWeb.Tests\\BasicWeb.Tests.csproj|c:\\users\\justi\\desktop\\skr\\vice\\basicweb\\basicweb.tests\\companyservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{459488CD-D67E-459A-8C72-638512DDA0B8}|BasicWeb.Tests\\BasicWeb.Tests.csproj|solutionrelative:basicweb.tests\\companyservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2983648-88E6-4731-B4BC-C0862A945FCC}|BasicWeb.Database\\BasicWeb.Database.csproj|c:\\users\\justi\\desktop\\skr\\vice\\basicweb\\basicweb.database\\implementations\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2983648-88E6-4731-B4BC-C0862A945FCC}|BasicWeb.Database\\BasicWeb.Database.csproj|solutionrelative:basicweb.database\\implementations\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{424A7280-963A-4B8F-85CE-AFEF0159E162}|BasicWeb.Services\\BasicWeb.Services.csproj|c:\\users\\justi\\desktop\\skr\\vice\\basicweb\\basicweb.services\\implementations\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{424A7280-963A-4B8F-85CE-AFEF0159E162}|BasicWeb.Services\\BasicWeb.Services.csproj|solutionrelative:basicweb.services\\implementations\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "BasicWeb\\Controllers\\ContactController.cs",
-              "ToolTip": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "BasicWeb\\Controllers\\ContactController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAiwEYAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CompanyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Database\\Implementations\\CompanyRepository.cs",
+              "RelativeDocumentMoniker": "BasicWeb.Database\\Implementations\\CompanyRepository.cs",
+              "ToolTip": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Database\\Implementations\\CompanyRepository.cs",
+              "RelativeToolTip": "BasicWeb.Database\\Implementations\\CompanyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T22:06:24.483Z",
+              "WhenOpened": "2025-03-10T02:46:02.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompanyService.cs",
+              "DocumentMoniker": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Services\\Implementations\\CompanyService.cs",
+              "RelativeDocumentMoniker": "BasicWeb.Services\\Implementations\\CompanyService.cs",
+              "ToolTip": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Services\\Implementations\\CompanyService.cs",
+              "RelativeToolTip": "BasicWeb.Services\\Implementations\\CompanyService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwFkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T02:43:18.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CompanyServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Tests\\CompanyServiceTest.cs",
+              "RelativeDocumentMoniker": "BasicWeb.Tests\\CompanyServiceTest.cs",
+              "ToolTip": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Tests\\CompanyServiceTest.cs",
+              "RelativeToolTip": "BasicWeb.Tests\\CompanyServiceTest.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAADwv7wAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T02:41:42.603Z",
               "EditorCaption": ""
             }
           ]

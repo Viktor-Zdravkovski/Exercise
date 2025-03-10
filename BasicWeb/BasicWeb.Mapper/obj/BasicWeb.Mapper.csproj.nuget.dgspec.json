@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Mapper\\BasicWeb.Mapper.csproj": {}
+    "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Mapper\\BasicWeb.Mapper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Domain\\BasicWeb.Domain.csproj": {
+    "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Domain\\BasicWeb.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Domain\\BasicWeb.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Domain\\BasicWeb.Domain.csproj",
         "projectName": "BasicWeb.Domain",
-        "projectPath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Domain\\BasicWeb.Domain.csproj",
+        "projectPath": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Domain\\BasicWeb.Domain.csproj",
         "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Domain\\obj\\",
+        "outputPath": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -65,18 +65,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj": {
+    "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj",
+        "projectUniqueName": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj",
         "projectName": "BasicWeb.Dto",
-        "projectPath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj",
+        "projectPath": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj",
         "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Dto\\obj\\",
+        "outputPath": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Dto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -109,7 +109,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -130,18 +130,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Mapper\\BasicWeb.Mapper.csproj": {
+    "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Mapper\\BasicWeb.Mapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Mapper\\BasicWeb.Mapper.csproj",
+        "projectUniqueName": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Mapper\\BasicWeb.Mapper.csproj",
         "projectName": "BasicWeb.Mapper",
-        "projectPath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Mapper\\BasicWeb.Mapper.csproj",
+        "projectPath": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Mapper\\BasicWeb.Mapper.csproj",
         "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Mapper\\obj\\",
+        "outputPath": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Mapper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -162,11 +162,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Domain\\BasicWeb.Domain.csproj": {
-                "projectPath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Domain\\BasicWeb.Domain.csproj"
+              "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Domain\\BasicWeb.Domain.csproj": {
+                "projectPath": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Domain\\BasicWeb.Domain.csproj"
               },
-              "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj": {
-                "projectPath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj"
+              "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj": {
+                "projectPath": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Dto\\BasicWeb.Dto.csproj"
               }
             }
           }
@@ -181,7 +181,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -208,7 +208,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -3,6 +3,7 @@ using BasicWeb.Database.Interfaces;
 using BasicWeb.Domain;
 using BasicWeb.Dto.ContactsDto;
 using BasicWeb.Services.Implementations;
+using BasicWeb.Shared.CustomExceptions;
 using Microsoft.Extensions.Logging;
 using Moq;
 
@@ -29,19 +30,22 @@ namespace BasicWeb.Tests
         public async Task DeleteContact_ContactNotFound_ThrowsException()
         {
             // Arrange
-            int id = 3;
-            _contactRepositoryMock.Setup(x => x.GetById(id)).Returns((Contact)null);
+            int id = 13;
+            _contactRepositoryMock.Setup(x => x.GetById(id)).ReturnsAsync((Contact)null);
 
             // Act & Assert
-            Assert.Throws<Exception>(() => _contactService.DeleteContact(id));
+            var exception = Assert.ThrowsAsync<NotFoundException>(() => _contactService.DeleteContact(id));
+
+            Assert.AreEqual($"Contact with ID:{id} was not found", exception.Message);
+
             _loggerMock.Verify(
-                        x => x.Log(
-                        LogLevel.Error,
-                        It.IsAny<EventId>(),
-                        It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Delete failed: Contact with id: {id} doesnt exists")),
-                        It.IsAny<Exception>(),
-                        It.IsAny<Func<It.IsAnyType, Exception, string>>()),
-                        Times.Once);
+                x => x.Log(
+                    LogLevel.Error,
+                    It.IsAny<EventId>(),
+                    It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Delete failed: Contact with id: {id} doesnt exists")),
+                    It.IsAny<Exception>(),
+                    It.IsAny<Func<It.IsAnyType, Exception, string>>()),
+                Times.Once);
         }
 
         [Test]
@@ -59,10 +63,10 @@ namespace BasicWeb.Tests
                 Name = name
             };
 
-            _contactRepositoryMock.Setup(x => x.GetById(id)).Returns(contact);
+            _contactRepositoryMock.Setup(x => x.GetById(id)).ReturnsAsync(contact);
 
             // Act 
-            _contactService.DeleteContact(id);
+            await _contactService.DeleteContact(id);
 
             // Assert
             _contactRepositoryMock.Verify(x => x.Delete(It.Is<Contact>(y => y.Id == id && y.Name == name)), Times.Once);
@@ -79,10 +83,13 @@ namespace BasicWeb.Tests
                 Id = id,
                 Name = name
             };
-            _contactRepositoryMock.Setup(x => x.GetById(id)).Returns((Contact)null);
+            _contactRepositoryMock.Setup(x => x.GetById(id)).ReturnsAsync((Contact)null);
 
             // Act & Assert
-            Assert.Throws<Exception>(() => _contactService.UpdateContact(contact));
+            var exception = Assert.ThrowsAsync<NotFoundException>(async () => await _contactService.UpdateContact(contact));
+
+            Assert.AreEqual("No contact found to update", exception.Message);
+
             _loggerMock.Verify(
                         x => x.Log(
                         LogLevel.Error,
@@ -91,6 +98,21 @@ namespace BasicWeb.Tests
                         It.IsAny<Exception>(),
                         It.IsAny<Func<It.IsAnyType, Exception, string>>()),
                         Times.Once);
+        }
+
+        [Test]
+        public void UpdateContact_NameIsEmpty_ThrowsArgumentException()
+        {
+            // Arrange
+            var contact = new UpdateContactDto
+            {
+                Id = 5,
+                Name = "" 
+            };
+
+            // Act & Assert
+            var exception = Assert.ThrowsAsync<ArgumentException>(async () => await _contactService.UpdateContact(contact));
+            Assert.AreEqual("Contact name cannot be empty", exception.Message);
         }
 
         [Test]
@@ -111,7 +133,7 @@ namespace BasicWeb.Tests
                 Name = name,
             };
 
-            _contactRepositoryMock.Setup(x => x.GetById(id)).Returns(contact);
+            _contactRepositoryMock.Setup(x => x.GetById(id)).ReturnsAsync(contact);
 
             // Act
             _contactService.UpdateContact(contactDto);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "90RrogMZz/g=",
+  "dgSpecHash": "/GVvOpnd0+4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\justi\\Desktop\\basicwebexerice\\Exercise\\BasicWeb\\BasicWeb.Database\\BasicWeb.Database.csproj",
+  "projectFilePath": "C:\\Users\\justi\\Desktop\\Skr\\VIce\\BasicWeb\\BasicWeb.Database\\BasicWeb.Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\justi\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\justi\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

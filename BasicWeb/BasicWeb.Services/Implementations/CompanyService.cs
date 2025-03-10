@@ -2,6 +2,7 @@
 using BasicWeb.Database.Interfaces;
 using BasicWeb.Domain;
 using BasicWeb.Dto.CompanyDto;
+using BasicWeb.Dto.ContactsDto;
 using BasicWeb.Dto.CountryDto;
 using BasicWeb.Services.Interfaces;
 using BasicWeb.Shared.CustomExceptions;
@@ -11,11 +12,11 @@ namespace BasicWeb.Services.Implementations
 {
     public class CompanyService : ICompanyService
     {
-        private readonly ILogger<CountryService> _logger;
+        private readonly ILogger<CompanyService> _logger;
         private readonly IRepository<Company> _companyRepo;
         private readonly IMapper _mapper;
 
-        public CompanyService(ILogger<CountryService> logger, IRepository<Company> companyRepo, IMapper mapper)
+        public CompanyService(ILogger<CompanyService> logger, IRepository<Company> companyRepo, IMapper mapper)
         {
             _logger = logger;
             _companyRepo = companyRepo;
@@ -41,6 +42,11 @@ namespace BasicWeb.Services.Implementations
 
         public async Task<int> UpdateCompany(UpdateCompanyDto updateCompanyDto)
         {
+            if (string.IsNullOrWhiteSpace(updateCompanyDto.Name))
+            {
+                throw new ArgumentException("Company name cannot be empty");
+            }
+
             Company existingCompany = await _companyRepo.GetById(updateCompanyDto.Id);
 
             if (existingCompany == null)
@@ -61,9 +67,10 @@ namespace BasicWeb.Services.Implementations
 
             if (company == null)
             {
-                _logger.LogError("Deletion Failed: A company doesn't exits");
+                _logger.LogError($"Delete failed: Company with id: {id} doesnt exists");
                 throw new NotFoundException($"Company with ID: {id} was not found");
             }
+
 
             _companyRepo.Delete(company);
         }
@@ -71,6 +78,13 @@ namespace BasicWeb.Services.Implementations
         public async Task<List<CompanyDto>> GetAll()
         {
             IReadOnlyList<Company> companies = await _companyRepo.Get();
+
+            if (!companies.Any())
+            {
+                _logger.LogError("No companies found");
+                throw new NotFoundException("No companies found");
+            }
+
             return _mapper.Map<List<CompanyDto>>(companies);
         }
     }

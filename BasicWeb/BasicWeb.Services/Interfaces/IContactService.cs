@@ -17,7 +17,5 @@ namespace BasicWeb.Services.Interfaces
 
         Task<List<ContactDto>> FilterContacts(int countryId, int companyId);
 
-
-        // smeni int mesto void VO SITE
     }
 }
